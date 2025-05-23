@@ -41,7 +41,7 @@ export default tseslint.config(
       '@stylistic/function-call-spacing': ["error", "never"],
       '@stylistic/semi-spacing': "error",
       '@stylistic/space-before-blocks': "error",
-
+      '@typescript-eslint/no-explicit-any': "error",
     },
   },
 )
