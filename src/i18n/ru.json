@@ -1,5 +1,24 @@
 {
     "label": {
-        "info": "Это все непрочитанные уведомления за последние 30 дней"
+        "home": "Главная",
+        "menu": "Меню",
+        "booking": "Бронь",
+        "more": "Больше",
+        "more_details": "Подробнее"
+    },
+    "titlePage": {
+        "home": "Главная",
+        "menu": "Меню",
+        "booking": "Бронь",
+        "more": "Больше"
+    },
+    "title": {
+        "dish_of_day": "Блюдо дня"
+    },
+    "menu_sections": {
+        "appetizers": "Закуски",
+        "main_course": "Основное блюдо",
+        "desserts": "Десерты",
+        "drinks": "Напитки"
     }
 }

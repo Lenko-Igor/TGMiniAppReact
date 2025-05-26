@@ -1,0 +1,92 @@
+.layout {
+    background-color: var(--tertiary);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    header {
+        max-width: 450px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 50px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        background-color: var(--tertiary);
+        & .container {
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            & .button_menu {
+                & svg {
+                    color: var(--primary);
+                    font-size: 30px;
+                }
+            }
+            & .title_page {
+
+            }
+            & .button_search {
+                border-color: var(--primary);
+                padding: 0 6px;
+                & svg {
+                    color: var(--primary);
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    main {
+        max-width: 450px;
+        width: 100%;
+        padding-bottom: 100px;
+        & .container {
+            padding: 0 16px;
+        }
+    }
+    footer {
+        max-width: 450px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        background-color: var(--tertiary);
+        & .container {
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & .link {
+                width: 48px;
+                height: 48px;
+                color: var(--primary);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                & svg {
+                    font-size: 24px;
+                }
+            }
+            & .button_call_waiter {
+                width: 48px;
+                height: 48px;
+                border-radius: 24px;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--secondary);
+                & svg {
+                    font-size: 24px;
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import { LoadingOutlined } from '@ant-design/icons';
-import React from 'react'
+import React, { type FC } from 'react'
 
 interface Props {
   fit?: boolean;
@@ -8,7 +8,7 @@ interface Props {
   fontSize?: number;
 }
 
-const Loading = ({ fit, paddingTop, paddingBottom, fontSize }: Props) => {
+const Loading: FC<Props> = ({ fit, paddingTop, paddingBottom, fontSize }) => {
   return (
     <div
       style={{

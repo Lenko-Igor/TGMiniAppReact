@@ -1,7 +1,8 @@
 const ROUTES = {
-  INITIAL_ROUTE: '/',
-  HOME: 'home',
-  CONTACTS: 'contacts'
+  HOME: '/',
+  MENU: '/menu',
+  BOOKING: '/booking',
+  MORE: '/more'
 }
 
 export default ROUTES

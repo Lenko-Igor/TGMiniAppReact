@@ -1,5 +1,24 @@
 {
     "label": {
-        "info": "These are all unread notifications for the last 30 days"
+        "home": "Home",
+        "menu": "Menu",
+        "booking": "Booking",
+        "more": "More",
+        "more_details": "More details"
+    },
+    "titlePage": {
+        "home": "Home",
+        "menu": "Menu",
+        "booking": "Booking",
+        "more": "More"
+    },
+    "title": {
+        "dish_of_day": "Dish of the day"
+    },
+    "menu_sections": {
+        "appetizers": "Appetizers",
+        "main_course": "Main course",
+        "desserts": "Desserts",
+        "drinks": "Drinks"
     }
 }

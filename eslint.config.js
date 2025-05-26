@@ -18,12 +18,20 @@ export default tseslint.config(
       js.configs.recommended, 
       ...tseslint.configs.recommended,
     ],
-    files: ['**/*.{ts,tsx}'],
+    files: ['**/*.{ts,tsx}', '*.tsx'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
-       parser: parserTs,
+      parser: parserTs,
     },
+    overrides: [
+      {
+        files: ['*.ts', '*.tsx'],
+        parserOptions: {
+          project: ['./tsconfig.json'],
+        },
+      },
+    ],
     plugins: {
       'react': react,
       'jsx-a11y': jsxA11y,
