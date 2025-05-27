@@ -8,6 +8,8 @@ import stylistic from '@stylistic/eslint-plugin'
 import stylisticTs  from '@stylistic/eslint-plugin-ts'
 import parserTs from '@typescript-eslint/parser'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -16,13 +18,20 @@ export default tseslint.config(
       react.configs.recommended,
       jsxA11y.configs.recommended,
       js.configs.recommended, 
-      ...tseslint.configs.recommended,
+      ...tseslint.configs.recommendedTypeChecked,
+      ...tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      ...tseslint.configs.stylisticTypeChecked,
     ],
     files: ['**/*.{ts,tsx}', '*.tsx'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
       parser: parserTs,
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
     overrides: [
       {
@@ -39,6 +48,8 @@ export default tseslint.config(
       'react-refresh': reactRefresh,
       '@stylistic/ts': stylisticTs,
       '@stylistic': stylistic,
+      'react-x': reactX,
+      'react-dom': reactDom,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -59,6 +70,8 @@ export default tseslint.config(
       '@typescript-eslint/no-explicit-any': "off",
       'react/jsx-uses-react': 'error',
       'react/jsx-uses-vars': 'error',
+      ...reactX.configs['recommended-typescript'].rules,
+      ...reactDom.configs.recommended.rules,
     },
   },
 )

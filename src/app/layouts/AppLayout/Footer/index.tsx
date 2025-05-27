@@ -16,7 +16,7 @@ const Footer = () => {
                 <p>{t('label:home')}</p>
             </Link>
             <Link to={ROUTES.MENU} className={styles.link}>
-                <IconPlate color='var(--primary)'/>
+                <IconPlate color={'var(--primary)'} />
                 <p>{t('label:menu')}</p>
             </Link>
             <Button 
