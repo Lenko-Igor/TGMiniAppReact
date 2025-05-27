@@ -1,5 +1,5 @@
 import { LoadingOutlined } from '@ant-design/icons';
-import React, { type FC } from 'react'
+import { type FC } from 'react'
 
 interface Props {
   fit?: boolean;

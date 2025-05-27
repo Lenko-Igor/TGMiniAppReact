@@ -1,4 +1,4 @@
-import React, { type FC } from 'react'
+import { type FC } from 'react'
 import styles from './index.module.scss'
 import { Col, Row } from 'antd'
 import { menuData } from '../../../utils/mockData/listMenu'
