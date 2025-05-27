@@ -1,4 +1,5 @@
 /// <reference types="vite/client" />
+declare module "envConfig";
 
 svgr({
   // svgr options: https://react-svgr.com/docs/options/

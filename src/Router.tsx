@@ -1,3 +1,4 @@
+/// <reference types="vite-plugin-svgr/client" />
 import { lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ROUTES from "./utils/constants/routes";
