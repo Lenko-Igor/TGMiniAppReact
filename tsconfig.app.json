@@ -22,17 +22,6 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
-    "types": [
-      "vite/client",
-    ],
-    "typeRoots": ["./node_modules/@types/", "./types", "./node_modules"],
-    "baseUrl": ".",
-    "paths": {
-      "~/*": [
-        "./src/*"
-      ]
-    }
   },
   "include": ["src", "i18n.ts"]
 }
