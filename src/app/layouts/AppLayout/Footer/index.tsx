@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import ROUTES from '../../../../utils/constants/routes'
 import { BellOutlined, CalendarOutlined, HomeOutlined, MoreOutlined } from '@ant-design/icons'
 import { useTranslation } from 'react-i18next'
-import IconPlate from '../../../../assets/icons/plate_icon.svg?react'
+// import IconPlate from '../../../../assets/icons/plate_icon.svg?react'
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -16,7 +16,7 @@ const Footer = () => {
                 <p>{t('label:home')}</p>
             </Link>
             <Link to={ROUTES.MENU} className={styles.link}>
-                <IconPlate color='var(--primary)'/>
+                <HomeOutlined />
                 <p>{t('label:menu')}</p>
             </Link>
             <Button 
