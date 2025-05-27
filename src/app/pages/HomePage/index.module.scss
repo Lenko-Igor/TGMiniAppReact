@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    .block {
+        .title {
+            margin-bottom: 16px;
+        }
+    }
+}

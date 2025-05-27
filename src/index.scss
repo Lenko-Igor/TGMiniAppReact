@@ -1,0 +1,24 @@
+:root {
+  --primary: #6f8d6a;
+  --secondary: #afc963;
+  --tertiary: #deeaba;
+  --black: #1b1c17;
+}
+
+body {
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  & p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+  }
+
+  & #root {
+    height: 100vh;
+    background-color: var(--tertiary);
+  }
+}
