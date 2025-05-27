@@ -1,8 +1,8 @@
 const ROUTES = {
-  HOME: '/',
-  MENU: '/menu',
-  BOOKING: '/booking',
-  MORE: '/more'
+  HOME: '/TGMiniAppReact/',
+  MENU: '/TGMiniAppReact/menu',
+  BOOKING: '/TGMiniAppReact/booking',
+  MORE: '/TGMiniAppReact/more'
 }
 
 export default ROUTES
