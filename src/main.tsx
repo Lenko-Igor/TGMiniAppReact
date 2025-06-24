@@ -7,6 +7,12 @@ import { ConfigProvider } from 'antd';
 
 import { theme } from './theme';
 
+const user = Telegram.WebApp.initDataUnsafe.user;
+if (user) {
+console.log(`ID: ${user.id}`);
+console.log(`Имя: ${user.first_name}`);
+}
+
 createRoot(document.getElementById('root')!).render(
   <ErrorBoundary>
     <ConfigProvider theme={theme}>
