@@ -8,6 +8,7 @@ const AppLayout = lazy(() => import('./app/layouts/AppLayout'))
 const HomePage = lazy(() => import('./app/pages/HomePage'))
 const MenuPage = lazy(() => import('./app/pages/MenuPage'))
 const BookingPage = lazy(() => import('./app/pages/BookingPage'))
+const MorePage = lazy(() => import('./app/pages/MorePage'))
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: ROUTES.MORE,
-        element: <p>More</p>,
+        element: <MorePage />,
         errorElement: <ErrorPage />
       }
     ]
