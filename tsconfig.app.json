@@ -27,6 +27,8 @@
       "vite/client",
       "vite-plugin-svgr/client"
     ],
+
+    "typeRoots": ["./src/types", "./types"],
   },
   "include": ["src", "i18n.ts"]
 }
