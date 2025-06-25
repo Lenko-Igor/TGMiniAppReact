@@ -1,0 +1,1 @@
+import{r,j as e,B as s}from"./index-3QkCOgVE.js";const t=window.Telegram.WebApp,n=()=>{const o=()=>{t.close()};return r.useEffect(()=>{t.ready()},[]),e.jsx("div",{children:e.jsx(s,{type:"primary",onClick:o,children:"Close the App"})})};export{n as default};
