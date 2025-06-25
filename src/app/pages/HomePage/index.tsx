@@ -3,7 +3,6 @@ import { useTranslation  } from 'react-i18next'
 import styles from './index.module.scss'
 import DishOfDayCard from './DishOfDayCard';
 
-
 const HomePage: FC = () => {
   const tg = window.Telegram.WebApp;
   const { t } = useTranslation();
